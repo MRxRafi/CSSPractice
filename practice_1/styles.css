@@ -1,0 +1,202 @@
+/* Global styles */
+html {
+    box-sizing: border-box;   
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    width: 320px;
+    /*height: 1670px;*/
+    font-family: Bebas Neue;
+    text-align: center;
+
+    color: #a2a2a2;
+}
+
+/* Structures styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+
+    background-color: black;
+}
+
+main {
+
+}
+
+article{
+    background-color: #e7e7e7;
+}
+
+footer{
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1.17px;
+
+    background-color: #000000;
+}
+
+h1 {
+    width: 221px;
+    height: 129px;
+    font-size: 36px; 
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+h2 {
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1.67px;
+}
+
+/* Class Styles */
+.material-icons {
+    margin-right: 24px;
+}
+
+.summary {
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.about {
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    background-color: #000000;
+}
+
+.habilities {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: 546px;
+}
+
+.grid_hab {
+    display: grid;
+
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 24px;
+    margin-right: 24px;
+    overflow: auto;
+    
+}
+
+.grid_content {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 208px;
+    height: 350px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #000000; 
+}
+
+.contact {
+    display: flex;
+    
+    width: 320px;
+    height: 820px;
+    background-color: #e7e7e7;
+}
+
+p.h3 {
+    width: 137px;
+    height: 26px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+    border: solid 2px #ffffff;
+    padding-top: 2px;
+}
+
+p.h4 {
+    color: #ffffff;
+}
+
+p.grid_text {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+/* ID Styles */
+#header_text {
+    width: 106px;
+    height: 17px;
+    margin: 24px;
+    letter-spacing: 1.5px;
+    
+}
+
+#hola {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    color: #000000;
+}
+
+#hablamos {
+    width: 160px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 2px #1c6698;
+
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 10px;
+
+    color: #1c6698;
+}
+
+#h2_hab {
+    color: #000000;
+}
+
+#lorem {
+    margin-bottom: 40px;
+    width: 264px;
+    height: 200px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+}
+
+#lorem2 {
+    font-weight: 600;
+}
+
+#footer_txt {
+    width: 149px;
+    height: 17px;
+}

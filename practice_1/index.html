@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>CSS Practice</title>
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
-    
+    <header>
+        <p class="text" id="header_text">Juan maravilloso</p>
+        <i class="material-icons" id="header_icon">menu</i>
+    </header>
+    <main>
+        <article>
+            <section class="summary">
+                <p id="hola">¡HOLA!</p>
+                <h1>Soy Juan, desarrollador web</h1>
+                <p id="hablamos">¿HABLAMOS?</p>
+            </section>
+            <section class="about">
+                <h2>Sobre mi</h2>
+                <section id="lorem">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p id="lorem2">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </section>
+                <iframe src="https://www.youtube.com/embed/grEKMHGYyns" frameborder="1"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </section>
+            <section class="habilities">
+                <h2 id="h2_hab">Habilidades</h2>
+                <section class="grid_hab">
+                    <section class="grid_content">
+                        <p class="h3">Front End Developer</p>
+                        <p class="h4">Lenguajes</p>
+                        <p class="grid_text">HTML, CSS, JavaScript</p>
+                        <p class="h4">Dev Tools</p>
+                        <p class="grid_text"> Atom<br>
+                            Bootstrap<br>
+                            Github<br>
+                            Gitlab<br>
+                            Terminal</p>
+                    </section>
+                    <section class="grid_content">
+                        <p class="h3">Back-End Developer</p>
+                        <p class="h4">Lenguajes</p>
+                        <p class="grid_text">Java, Node.js, Python, PHP</p>
+                        <p class="h4">Dev Tools</p>
+                        <p class="grid_text"> Angular <br>
+                            Github<br>
+                            Docker<br>
+                            XAMPP</p>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p id="footer_txt">© 2019 Juan maravilloso </p>
+    </footer>
 </body>
 </html>

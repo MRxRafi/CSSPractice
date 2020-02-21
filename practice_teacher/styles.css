@@ -10,9 +10,10 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, header.nav-open ul {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
+    font-weight: normal;
 }
 
 h1 {
@@ -90,6 +91,46 @@ header #icon-close {
 
 header nav {
     display: none;
+}
+
+/* Menu */
+header.nav-open #icon-open {
+    display: none;
+}
+
+header.nav-open nav,
+header.nav-open #icon-close {
+    display: block;
+}
+
+header.nav-open nav {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 448px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e7e7e7
+}
+
+header.nav-open #icon-close {
+    z-index: 10;
+}
+
+header.nav-open ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+header.nav-open ul li{
+    color: #1c6698;
+    margin: 40px;
 }
 
 /* Summary */

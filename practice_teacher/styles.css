@@ -52,8 +52,8 @@ a.button {
 
 /* Layout */
 .wrapper {
-    padding-left: 24px; /* update #skills .list .skill:first-child */
-    padding-right: 24px;
+    padding-left: 8vw; /* update #skills .list .skill:first-child */
+    padding-right: 8vw;
 }
 
 header,
@@ -86,15 +86,20 @@ header #icon-open {
 
 }
 
+header nav,
 header #icon-close {
     display: none;
 }
 
-header nav {
-    display: none;
+/* Menu */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
-/* Menu */
 header.nav-open #icon-open {
     display: none;
 }
@@ -121,14 +126,6 @@ header.nav-open #icon-close {
     z-index: 10;
 }
 
-header.nav-open ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
 header.nav-open ul li{
     color: #1c6698;
     margin: 40px;
@@ -149,7 +146,10 @@ header.nav-open ul li{
 }
 
 /* About me */
-
+#about-me .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 /* TODO Fix desktop version (frame too big) */
 .videoWrapper { /* See: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
     position: relative;
@@ -179,11 +179,11 @@ header.nav-open ul li{
 
 #skills .list::after {
     content: "";
-    padding-right: 24px;
+    padding-right: 8vw; /* update .wrapper */
 }
 
 #skills .list .skill {
-    flex-shrink: 0; 
+    flex-shrink: 0;
     box-sizing: border-box;
     padding: 30px 35px;
     width: 208px;
@@ -194,7 +194,7 @@ header.nav-open ul li{
 }
 
 #skills .list .skill:first-child {
-    margin-left: 24px; /* update .wrapper */
+    margin-left: 8vw; /* update .wrapper */
 }
 
 #skills .list .skill:last-child {
@@ -221,4 +221,61 @@ footer{
     justify-content: center;
     align-items: center;
     height: 104px;
+}
+
+@media screen and (min-width: 533px){
+    #skills .list {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* layout */
+    section {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+
+    /* header */
+    header {
+        height: 104px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    /* menu */
+    header #icon-open,
+    header #icon-close,
+    header.nav-open #icon-open,
+    header.nav-open #icon-close {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    /* Summary */
+    #summary p {
+        font-size: 20px;
+    }
+
+    #summary h1 {
+        margin: 30px auto 60px auto;
+        width: 491px;
+        font-size: 80px;
+    }
+
+    /* Skills */
+
+    #skills .list .skill {
+        margin-right: 128px;
+    }
 }

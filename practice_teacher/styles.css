@@ -39,6 +39,8 @@ h4 {
     border: solid 2px #1c6698;
     padding: 14px 36px;
     color: #1c6698;
+    background: #e7e7e7;
+    width: auto;
 }
 
 .button:hover {
@@ -98,6 +100,13 @@ header ul {
     margin: 0;
     font-size: 18px;
     letter-spacing: 2px;
+    color: #1c6698;
+}
+
+/* TODO Fix link color */
+header ul li a, header ul li a:visited {
+    text-decoration: none;
+    color: #1c6698;
 }
 
 header.nav-open #icon-open {
@@ -126,8 +135,7 @@ header.nav-open #icon-close {
     z-index: 10;
 }
 
-header.nav-open ul li{
-    color: #1c6698;
+header.nav-open ul li {
     margin: 40px;
 }
 
@@ -150,7 +158,7 @@ header.nav-open ul li{
     max-width: 800px;
     margin: 0 auto;
 }
-/* TODO Fix desktop version (frame too big) */
+
 .videoWrapper { /* See: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */

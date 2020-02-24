@@ -84,10 +84,6 @@ header h2 {
     letter-spacing: 1.5px;
 }
 
-header #icon-open {
-
-}
-
 header nav,
 header #icon-close {
     display: none;
@@ -140,10 +136,6 @@ header.nav-open ul li {
 }
 
 /* Summary */
-#summary {
-
-}
-
 #summary p {
     font-size: 18px;
 }
@@ -176,10 +168,6 @@ header.nav-open ul li {
 }
 
 /* Skills */
-#skills {
-
-}
-
 #skills .list{
     display: flex;
     overflow: auto;
